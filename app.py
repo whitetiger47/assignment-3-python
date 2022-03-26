@@ -80,7 +80,7 @@ def storestudents():
         if mycursor.rowcount > 0:
             updated_row += 1
     if updated_row > 0:
-        return f"{updated_row} rows are entered into RDS Database", 200
+        return " rows are entered into RDS Database", 200
     else:
         return "Data is not inserted into RDS Database", 400
 
