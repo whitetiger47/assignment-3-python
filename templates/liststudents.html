@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <!-- Reference : https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l -->
+    <!-- I have taken reference of HTML Table code from above website and edited -->
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Banner ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tr>
+            {% for student in students%}
+            <tr>
+                <td>{{student['first_name']}}</td>
+                <td>{{student['last_name']}}</td>
+                <td>{{student['banner']}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
